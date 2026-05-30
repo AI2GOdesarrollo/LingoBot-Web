@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoBot | Portal de Instalación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/esp-web-tools@9.2.1/dist/web/install-button.js?module"></script>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>LingoBot 🤖</h1>
+            <p>Portal Oficial para Ensambladores</p>
+        </header>
+
+        <main>
+            <div class="card-grid">
+                
+                <!-- Tarjeta: Firmware ESP32 -->
+                <div class="device-card">
+                    <div class="card-icon">🧠</div>
+                    <h2>Firmware LingoBot</h2>
+                    <p>Instala el sistema operativo del LingoBot (V7.1) y los archivos de audio en la tarjeta ESP32-S3. <br><br><strong>Instrucciones:</strong> Conecta la placa por USB y presiona instalar.</p>
+                    <div class="install-container">
+                        <esp-web-install-button manifest="firmware/manifest.json"></esp-web-install-button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: App Android -->
+                <div class="device-card">
+                    <div class="card-icon">📱</div>
+                    <h2>LingoBot App (Android)</h2>
+                    <p>Descarga la aplicación móvil oficial de LingoBot para controlar el juguete, ajustar niveles, idiomas y monitorear el progreso.</p>
+                    <div class="install-container">
+                        <a href="app/lingobot-app-release.apk" class="download-button" download>
+                            Descargar APK
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Compatible con navegadores Chrome, Edge y Opera. Requiere una placa ESP32-S3 conectada por USB.</p>
+        </footer>
+    </div>
+</body>
+</html>
