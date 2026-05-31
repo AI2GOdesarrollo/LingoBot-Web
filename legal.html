@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoBot | Legal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+        .legal-container h1 { font-size: 28px; margin-bottom: 20px; color: #2C3E50; }
+        .legal-container h2 { font-size: 20px; margin-top: 30px; margin-bottom: 10px; color: #7E57C2; }
+        .legal-container p, .legal-container ul { font-size: 16px; color: #555; line-height: 1.6; }
+        .legal-container ul { padding-left: 20px; }
+        .lang-selector { margin-bottom: 30px; text-align: center; }
+        .lang-btn {
+            background: #eee; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer;
+            font-family: 'Fredoka', sans-serif; font-weight: 600; margin: 0 5px; color: #555;
+            transition: 0.3s;
+        }
+        .lang-btn.active { background: #7E57C2; color: white; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #7E57C2; text-decoration: none; font-weight: 600; }
+        .back-btn:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+    </div>
+
+    <div class="container">
+        <div class="legal-container">
+            <a href="index.html" class="back-btn">← Volver al Portal / Back / Retour</a>
+            
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLang('es')">Español</button>
+                <button class="lang-btn" onclick="setLang('en')">English</button>
+                <button class="lang-btn" onclick="setLang('fr')">Français</button>
+            </div>
+
+            <!-- ESPAÑOL -->
+            <div id="es" class="lang-section active">
+                <h1>Aviso de Privacidad y Términos de Uso</h1>
+                <p>Última actualización: Mayo 2026</p>
+                <h2>1. Cero Recopilación de Datos (Cumplimiento COPPA)</h2>
+                <p>El juguete educativo LingoBot y su Aplicación Móvil complementaria están diseñados pensando en la privacidad y seguridad de los niños. <strong>No recopilamos, no almacenamos, ni transmitimos ningún tipo de información personal</strong> (como nombres, correos electrónicos, fechas de nacimiento, grabaciones de voz, ni ubicación GPS) de menores de 13 años ni de sus padres.</p>
+                <h2>2. Funcionamiento Local (Bluetooth)</h2>
+                <p>Toda la interacción entre el juguete LingoBot y la Aplicación Móvil ocurre de forma local y encriptada a través de Bluetooth Low Energy (BLE). Los datos de progreso de aprendizaje se procesan de forma anónima y no abandonan el dispositivo móvil.</p>
+                <h2>3. Actualizaciones Inalámbricas (OTA)</h2>
+                <p>La aplicación puede conectarse a internet exclusivamente para consultar y descargar actualizaciones técnicas del sistema operativo (firmware) desde repositorios públicos controlados por nosotros. Durante este proceso, no se envían identificadores del usuario, ni datos de uso, ni direcciones MAC al servidor externo.</p>
+                <h2>4. Derechos ARCO y CCPA</h2>
+                <p>De conformidad con la Ley Federal de Protección de Datos Personales (México) y el CCPA (California), hacemos explícito que al no recopilar ningún tipo de dato personal, no existe una base de datos de usuarios de la cual podamos extraer, modificar o eliminar información bajo solicitudes ARCO. Su privacidad es total por diseño.</p>
+                <h2>5. Contacto</h2>
+                <p>Para cualquier duda o comentario sobre estas políticas, puede escribirnos a: <strong>soporte@lingobot.com</strong></p>
+            </div>
+
+            <!-- ENGLISH -->
+            <div id="en" class="lang-section">
+                <h1>Privacy Policy and Terms of Use</h1>
+                <p>Last updated: May 2026</p>
+                <h2>1. Zero Data Collection (COPPA Compliance)</h2>
+                <p>The LingoBot educational toy and its companion Mobile App are designed with children's privacy and safety in mind. <strong>We do not collect, store, or transmit any personal information</strong> (such as names, emails, birth dates, voice recordings, or GPS location) from children under 13 or their parents.</p>
+                <h2>2. Local Operation (Bluetooth)</h2>
+                <p>All interactions between the LingoBot toy and the Mobile App occur locally via Bluetooth Low Energy (BLE). Learning progress data is processed anonymously and never leaves the mobile device.</p>
+                <h2>3. Over-The-Air (OTA) Updates</h2>
+                <p>The application may connect to the internet solely to check for and download technical system updates (firmware) from our controlled public repositories. During this process, no user identifiers, usage data, or MAC addresses are sent to any external server.</p>
+                <h2>4. Privacy Rights (CCPA & LFPDPPP)</h2>
+                <p>In compliance with the California Consumer Privacy Act (CCPA) and Mexican data protection laws, we explicitly state that since no personal data is collected, we do not have a user database from which we can extract, modify, or delete information. Your privacy is absolute by design.</p>
+                <h2>5. Contact Us</h2>
+                <p>If you have any questions or concerns about these policies, please contact us at: <strong>soporte@lingobot.com</strong></p>
+            </div>
+
+            <!-- FRANÇAIS -->
+            <div id="fr" class="lang-section">
+                <h1>Politique de Confidentialité et Conditions d'Utilisation</h1>
+                <p>Dernière mise à jour : Mai 2026</p>
+                <h2>1. Zéro Collecte de Données (Conformité COPPA)</h2>
+                <p>Le jouet éducatif LingoBot et son application mobile associée sont conçus en tenant compte de la confidentialité et de la sécurité des enfants. <strong>Nous ne collectons, ne stockons, ni ne transmettons aucune information personnelle</strong> (telle que les noms, e-mails, dates de naissance, enregistrements vocaux ou localisation GPS) des enfants de moins de 13 ans ou de leurs parents.</p>
+                <h2>2. Fonctionnement Local (Bluetooth)</h2>
+                <p>Toutes les interactions entre le jouet LingoBot et l'application mobile se déroulent localement via Bluetooth Low Energy (BLE). Les données de progression de l'apprentissage sont traitées de manière anonyme et ne quittent jamais l'appareil mobile.</p>
+                <h2>3. Mises à Jour Sans Fil (OTA)</h2>
+                <p>L'application peut se connecter à Internet uniquement pour vérifier et télécharger des mises à jour techniques du système (firmware) depuis nos dépôts publics. Lors de ce processus, aucun identifiant utilisateur, donnée d'utilisation ou adresse MAC n'est envoyé à un serveur externe.</p>
+                <h2>4. Droits de Confidentialité</h2>
+                <p>Conformément aux lois sur la protection des données (y compris le CCPA de Californie), nous déclarons explicitement qu'aucune donnée personnelle n'étant collectée, nous ne disposons d'aucune base de données d'utilisateurs à partir de laquelle nous pourrions extraire, modifier ou supprimer des informations. Votre confidentialité est totale dès la conception.</p>
+                <h2>5. Contact</h2>
+                <p>Pour toute question concernant ces politiques, veuillez nous contacter à l'adresse : <strong>soporte@lingobot.com</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
